@@ -1,0 +1,22 @@
+from abc import ABC, abstractmethod
+
+# Clase abstracta
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+# Subclase que implementa la clase abstracta
+class Dog(Animal):
+    def make_sound(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow!"
+
+# Uso de las clases
+dog = Dog()
+cat = Cat()
+print(dog.make_sound())  # Salida: Woof!
+print(cat.make_sound())  # Salida: Meow!
