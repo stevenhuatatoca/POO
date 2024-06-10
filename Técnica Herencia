@@ -1,0 +1,17 @@
+# Clase base
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def move(self):
+        return f"{self.name} is moving"
+
+# Subclase que hereda de Animal
+class Dog(Animal):
+    def bark(self):
+        return f"{self.name} is barking"
+
+# Uso de las clases
+dog = Dog("Buddy")
+print(dog.move())  # Salida: Buddy is moving
+print(dog.bark())  # Salida: Buddy is barking
